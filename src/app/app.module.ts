@@ -4,7 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
-import {FormsModule } from '@angular/forms';
+// import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,8 @@ import {FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    FormsModule, 
+    // ^^this was added to use forms in two way binding
     AppRoutingModule
   ],
   providers: [],
